@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Meu Site</a>
+            <ul class="nav-menu">
+                <li><a href="../tema escuro e claro/tema.html" class="nav-link">Sistema de Temas</a></li>
+                <li><a href="carrinho.html" class="nav-link">Carrinho</a></li>
+                <li><a href="../formulario/formulario.html" class="nav-link">Formulário</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        
+        <div class="products">
+            <div class="product">
+                <img src="../03613228743162b327d858f8ae806c94.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p class="price">R$ 29,90</p>
+                <button class="add-to-cart" data-id="1" data-name="Produto 1" data-price="29.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="../332d110b5bc2ec6ab90e8d267b4c36a0.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p class="price">R$ 49,90</p>
+                <button class="add-to-cart" data-id="2" data-name="Produto 2" data-price="49.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="../image-116.webp" alt="Produto 3">
+                <h3>Produto 3</h3>
+                <p class="price">R$ 79,90</p>
+                <button class="add-to-cart" data-id="3" data-name="Produto 3" data-price="79.90">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="cart-section">
+            <h2>Itens no Carrinho</h2>
+            <div class="cart-items" id="cart-items">
+                
+            </div>
+            <div class="cart-total" id="cart-total">
+                Total: R$ 0,00
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="navbar.js"></script>
+    <script src="carrinho.js"></script>
+</body>
+</html>
